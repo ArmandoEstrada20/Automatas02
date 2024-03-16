@@ -17,6 +17,7 @@ async def start(update: Update, context: ContextTypes):
 async def help(update: Update, context: ContextTypes):
     await update.message.reply_text('Ayuda')
 
+#Función para manejar las respuestas del bot
 def handle_response(text: str, context: ContextTypes, update: Update):
     textoProcesado = text.lower()
     print(textoProcesado)
@@ -40,7 +41,7 @@ def handle_response(text: str, context: ContextTypes, update: Update):
             break
     else:
         return 'Lo siento, no tengo conocimento sobre ello. Te recomiendo acudir con el veterinario.'
-
+    #Respuesta cuando el alimento es encontrado en el JSON
     if alimento_nombre in alimentosBuenos:
         return f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
     elif alimento_nombre in alimentosMalos:
@@ -48,6 +49,7 @@ def handle_response(text: str, context: ContextTypes, update: Update):
 
     return 'No entiendo tu pregunta, intentalo de nuevo...'
 
+#Función para evaluar si el bot esta siendo contactado personalmente o desde un grupo en el que fue añadido y mencionado
 async def handle_message(update: Update, context: ContextTypes):
     message_type = update.message.chat.type
     text = update.message.text
