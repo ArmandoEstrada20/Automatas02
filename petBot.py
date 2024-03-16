@@ -39,7 +39,7 @@ def handle_response(text: str, context: ContextTypes, update: Update):
             descripcion = (alimentosBuenos[alimento] if alimento in alimentosBuenos else alimentosMalos[alimento])["descripcion"]
             break
     else:
-        return 'Por favor, especifica el alimento (por ejemplo, carne, chocolate, etc.)'
+        return 'Lo siento, no tengo conocimento sobre ello. Te recomiendo acudir con el veterinario.'
 
     if alimento_nombre in alimentosBuenos:
         return f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
