@@ -2,10 +2,15 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import json
 import re
+import random
 
 # Abre y carga el archivo JSON que contiene la información de los alimentos para mascotas
 with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
     data = json.load(file)
+
+# Abre y carga el archivo JSON que contiene respuestas en caso de no encontrar una mascota o un alimento.
+with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
+    respuestas = json.load(file)
 
 token = '7040554508:AAFUhP7cgQPH0j1DiA3aec9zGRsHIjmHfjk'
 usrName = 'PetFoodieBot'
@@ -24,30 +29,33 @@ def handle_response(text: str, context: ContextTypes, update: Update):
 
     # Busca si alguna de las palabras coincide con un tipo de mascota en el JSON
     mascota_names = [k.lower() for k in data["Mascotas"].keys()]
+    tipo_mascota = None
     for mascota in mascota_names:
         if mascota in textoProcesado:
             tipo_mascota = mascota
             break
-    else:
-        return 'Por favor, especifica el tipo de mascota (por ejemplo, perro, gato, etc.)'
 
     # Busca si alguna de las palabras coincide con un alimento en el JSON
-    alimentosBuenos = {alimento["nombre"].lower(): alimento for alimento in data["Mascotas"][tipo_mascota]["alimentosBuenos"]}
-    alimentosMalos = {alimento["nombre"].lower(): alimento for alimento in data["Mascotas"][tipo_mascota]["alimentosMalos"]}
+    alimentosBuenos = {alimento["nombre"].lower(): alimento for alimento in data["Mascotas"][tipo_mascota]["alimentosBuenos"]} if tipo_mascota else {}
+    alimentosMalos = {alimento["nombre"].lower(): alimento for alimento in data["Mascotas"][tipo_mascota]["alimentosMalos"]} if tipo_mascota else {}
+    alimento_nombre = None
+    descripcion = None
     for alimento in list(alimentosBuenos.keys()) + list(alimentosMalos.keys()):
         if re.search(r'\b' + alimento + r'\b', textoProcesado):
             alimento_nombre = alimento
             descripcion = (alimentosBuenos[alimento] if alimento in alimentosBuenos else alimentosMalos[alimento])["descripcion"]
             break
-    else:
-        return 'Lo siento, no tengo conocimento sobre ello. Te recomiendo acudir con el veterinario.'
-    #Respuesta cuando el alimento es encontrado en el JSON
-    if alimento_nombre in alimentosBuenos:
-        return f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
-    elif alimento_nombre in alimentosMalos:
-        return f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
 
-    return 'No entiendo tu pregunta, intentalo de nuevo...'
+    #Respuesta cuando el alimento es encontrado en el JSON
+    if tipo_mascota and alimento_nombre:
+        if alimento_nombre in alimentosBuenos:
+            return f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
+        elif alimento_nombre in alimentosMalos:
+            return f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
+    elif tipo_mascota:
+        return random.choice(respuestas['no_alimento_encontrado'])
+    else:
+        return random.choice(respuestas['no_mascota_encontrada'])
 
 #Función para evaluar si el bot esta siendo contactado personalmente o desde un grupo en el que fue añadido y mencionado
 async def handle_message(update: Update, context: ContextTypes):

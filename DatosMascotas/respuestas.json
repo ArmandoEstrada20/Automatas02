@@ -1,0 +1,20 @@
+{
+    "no_mascota_encontrada": [
+        "Lo siento, no tengo información sobre esa mascota. ¿Podrías especificar otra?",
+        "No encontré esa mascota en mi base de datos. ¿Podrías intentar con otra?",
+        "Parece que esa mascota no está en mi lista. ¿Podrías proporcionar otro tipo de mascota?",
+        "No cuento con información sobre ese tipo de mascota, te recomiendo que acudas a un veterinario para más información.",
+        "No tengo datos sobre ese tipo de mascota. ¿Podrías intentar con una más común?",
+        "Lamentablemente, no tengo información sobre esa mascota en particular. ¿Quieres probar con otra?",
+        "¡Ups! No pude encontrar información sobre esa mascota. ¿Podrías intentar con otra?"
+    ],
+    "no_alimento_encontrado": [
+        "Lo siento, no tengo información sobre ese alimento. ¿Podrías especificar otro?",
+        "No encontré ese alimento en mi base de datos. ¿Podrías intentar con otro?",
+        "Parece que ese alimento no está en mi lista. ¿Podrías proporcionar otro tipo de alimento?",
+        "No tengo información sobre ese alimento, te recomiendo acuidr con el veterinario.",
+        "¿Qué tal si pruebas con otro alimento? No parece que tengamos ese en nuestros registros.",
+        "Lamentablemente, no tengo datos sobre ese alimento en particular. ¿Podrías elegir otro para buscar?",
+        "¡Ups! Parece que no tengo información sobre ese alimento en mi base de datos. ¿Qué tal si intentamos con otro?"
+    ]
+}
