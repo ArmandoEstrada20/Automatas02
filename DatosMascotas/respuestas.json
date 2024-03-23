@@ -1,5 +1,5 @@
 {
-    "no_mascota_encontrada": [
+    "MascotaNoEncontrada": [
         "Lo siento, no tengo información sobre esa mascota. ¿Podrías especificar otra?",
         "No encontré esa mascota en mi base de datos. ¿Podrías intentar con otra?",
         "Parece que esa mascota no está en mi lista. ¿Podrías proporcionar otro tipo de mascota?",
@@ -8,7 +8,7 @@
         "Lamentablemente, no tengo información sobre esa mascota en particular. ¿Quieres probar con otra?",
         "¡Ups! No pude encontrar información sobre esa mascota. ¿Podrías intentar con otra?"
     ],
-    "no_alimento_encontrado": [
+    "AlimentoNoEncontrado": [
         "Lo siento, no tengo información sobre ese alimento. ¿Podrías especificar otro?",
         "No encontré ese alimento en mi base de datos. ¿Podrías intentar con otro?",
         "Parece que ese alimento no está en mi lista. ¿Podrías proporcionar otro tipo de alimento?",

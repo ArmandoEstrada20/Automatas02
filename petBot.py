@@ -53,9 +53,9 @@ def handle_response(text: str, context: ContextTypes, update: Update):
         elif alimento_nombre in alimentosMalos:
             return f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
     elif tipo_mascota:
-        return random.choice(respuestas['no_alimento_encontrado'])
+        return random.choice(respuestas['AlimentoNoEncontrado'])
     else:
-        return random.choice(respuestas['no_mascota_encontrada'])
+        return random.choice(respuestas['MascotaNoEncontrada'])
 
 #Función para evaluar si el bot esta siendo contactado personalmente o desde un grupo en el que fue añadido y mencionado
 async def handle_message(update: Update, context: ContextTypes):
