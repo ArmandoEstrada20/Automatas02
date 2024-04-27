@@ -1,0 +1,12 @@
+Pregunta Usuario: Puedo darle chilaquiles a mi gato?
+Respuesta: ¿Qué tal si pruebas con otro alimento? No parece que tengamos ese en nuestros registros.
+
+Pregunta Usuario: Puedo darle torta de lomo a mi perro?
+Respuesta: ¿Qué tal si pruebas con otro alimento? No parece que tengamos ese en nuestros registros.
+
+Pregunta Usuario: Puedo darle lechuga a mi conejo?
+Respuesta: Parece que ese alimento no está en mi lista. ¿Podrías proporcionar otro tipo de alimento?
+
+Pregunta Usuario: Grscias
+Respuesta: ¡Ups! No pude encontrar información sobre esa mascota. ¿Podrías intentar con otra?
+

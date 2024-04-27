@@ -1,0 +1,32 @@
+{
+    "MascotaNoEncontrada": [
+        "Lo siento, no tengo información sobre esa mascota. ¿Podrías especificar otra?",
+        "No encontré esa mascota en mi base de datos. ¿Podrías intentar con otra?",
+        "Parece que esa mascota no está en mi lista. ¿Podrías proporcionar otro tipo de mascota?",
+        "No cuento con información sobre ese tipo de mascota, te recomiendo que acudas a un veterinario para más información.",
+        "No tengo datos sobre ese tipo de mascota. ¿Podrías intentar con una más común?",
+        "Lamentablemente, no tengo información sobre esa mascota en particular. ¿Quieres probar con otra?",
+        "¡Ups! No pude encontrar información sobre esa mascota. ¿Podrías intentar con otra?"
+    ],
+    "AlimentoNoEncontrado": [
+        "Lo siento, no tengo información sobre ese alimento. ¿Podrías especificar otro?",
+        "No encontré ese alimento en mi base de datos. ¿Podrías intentar con otro?",
+        "Parece que ese alimento no está en mi lista. ¿Podrías proporcionar otro tipo de alimento?",
+        "No tengo información sobre ese alimento, te recomiendo acuidr con el veterinario.",
+        "¿Qué tal si pruebas con otro alimento? No parece que tengamos ese en nuestros registros.",
+        "Lamentablemente, no tengo datos sobre ese alimento en particular. ¿Podrías elegir otro para buscar?",
+        "¡Ups! Parece que no tengo información sobre ese alimento en mi base de datos. ¿Qué tal si intentamos con otro?"
+    ],
+    "Agradecimientos": [
+        "¡De nada! Estoy aquí para ayudarte.",
+        "¡No hay de qué! Si tienes más preguntas, no dudes en hacerlas.",
+        "¡Me alegra haber podido ayudar! ¿Necesitas algo más?",
+        "¡Fue un placer ayudarte! Si tienes más preguntas, estaré encantado de responderlas.",
+        "¡Estoy feliz de haber podido ayudar! ¿Hay algo más en lo que pueda asistirte?",
+        "¡Siempre estoy aquí para ayudar! No dudes en preguntar si tienes más dudas.",
+        "¡Gracias a ti por usar PetFoodieBot! Si tienes más preguntas, estaré aquí para ayudarte.",
+        "¡Estoy aquí para eso! Si tienes más preguntas, no dudes en hacerlas.",
+        "¡Me alegra que te haya sido útil! Si tienes más preguntas, estaré encantado de responderlas.",
+        "¡Siempre a tu servicio! No dudes en preguntar si tienes más dudas."
+    ]
+}

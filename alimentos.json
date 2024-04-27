@@ -1,0 +1,300 @@
+{
+  "Mascotas":{
+    "perro": {
+      "alimentosBuenos": [
+        {
+          "nombre": "Carne",
+          "descripcion": "Proporciona proteínas de alta calidad y es fácilmente digerible, manteniendo la salud y la energía."
+        },
+        {
+          "nombre": "Pollo",
+          "descripcion": "Cocina el pollo sin piel y sin huesos. Puedes hervir, asar o cocinar a la plancha el pollo sin sazonar. El pollo es una fuente de varias vitaminas y minerales importantes, como la vitamina B6, la niacina, el zinc y el fósforo. Estos nutrientes son esenciales para mantener la salud ósea, la función nerviosa, la piel y el pelaje, entre otros aspectos de la salud de tu perro"
+        },
+        {
+          "nombre": "Pescado cocido",
+          "descripcion": "Rico en ácidos grasos omega-3 para la salud del corazón, la piel y el pelaje."
+        },
+        {
+          "nombre": "Pescado",
+          "descripcion": "Rico en ácidos grasos omega-3 para la salud del corazón, la piel y el pelaje."
+        },
+        {
+          "nombre": "Huevo cocido",
+          "descripcion": "Excelente fuente de proteínas, vitaminas y minerales para la salud muscular y el pelaje."
+        },
+        {
+          "nombre": "Huevo",
+          "descripcion": "Excelente fuente de proteínas, vitaminas y minerales para la salud muscular y el pelaje."
+        },
+        {
+          "nombre": "Huevo crudo",
+          "descripcion": "Excelente fuente de proteínas, vitaminas y minerales para la salud muscular y el pelaje."
+        },
+        {
+          "nombre": "Arroz cocido",
+          "descripcion": "Fuente de carbohidratos de fácil digestión, útil para perros con problemas estomacales."
+        },
+        {
+          "nombre": "Arroz",
+          "descripcion": "Fuente de carbohidratos de fácil digestión, útil para perros con problemas estomacales."
+        },
+        {
+          "nombre": "Calabaza",
+          "descripcion": "Rica en fibra y ayuda a regular la digestión, especialmente útil en casos de estreñimiento."
+        },
+        {
+          "nombre": "Manzana",
+          "descripcion" : "Es fácil de digerir, suave, rica en vitaminas A, C, B, E y también contiene minerales. Ten mucho cuidado de no dar las semillas a tu perro porque son nocivas para él, retíralas antes."
+        },
+        {
+          "nombre": "Durazno",
+          "descripcion" : "Aporta vitaminas A, C, B1, B6 y B12, además de betacaroteno y minerales como el potasio, el fósforo o el magnesio. Ten cuidado de no darles el hueso del centro para evitar que se atraganten o ahoguen."
+        },
+        {
+          "nombre": "Mango",
+          "descripcion": "El mango contiene fibra, y vitaminas como la A, esencial para la buena salud de la piel y del pelo. Recuerda que debes pelar y retirar el hueso interior, antes de dárselo a nuestro perro."
+        },
+        {
+          "nombre": "Fresas",
+          "descripcion": "Aporta algunos beneficios como minerales y gran cantidad de vitamina C, que tiene un alto poder antioxidante. Esta vitamina ayuda a retrasar el envejecimiento celular del perro.  Además son ricas en fibra."
+        },
+        {
+          "nombre": "Sandía",
+          "descripcion": "a sandía es rica en vitaminas como la A, B6 y C, y minerales como el potasio. Estos nutrientes son buenos para el sistema inmunológico, la piel y el pelo de tu perro. Es muy baja en calorías, lo que la hace ideal para perros que necesitan controlar o perder peso."
+        },
+        {
+          "nombre": "Zanahoria",
+          "descripcion": " Las zanahorias son ricas en minerales y fibra, y contienen valiosos nutrientes, como la vitamina C, vitamina E, y vitamina K, pero sobre todo son ricas en betacaroteno, ideal para proteger la visión."
+        },
+        {
+          "nombre": "Apio",
+          "descripcion": "Entre sus beneficios está su contenido de vitaminas A, B y C, y sales minerales como el potasio, calcio y fósforo."
+        },
+        {
+          "nombre": "Piña",
+          "descripcion": "Con moderación y dada sin piel, tiene muchos beneficios para los perros. Contiene vitamina C, B1 y B6, una gran cantidad de agua y es una fuente natural de fibra."
+        },
+        {
+          "nombre": "Pera",
+          "descripcion": "Es rica en antioxidantes, como la vitamina C, y E. Es ideal como golosina para perros que estén un poco gorditos, ya que contiene casi un 80% de agua, y no es muy calórica. Por lo tanto, saciará a tu perro, sin hacerle engordar. Evita darle las semillas."
+        }
+      ],
+      "alimentosMalos": [
+        {
+          "nombre": "Chocolate",
+          "descripcion": "Contiene teobromina y cafeína, tóxicos para los perros, causando vómitos, diarrea y otros síntomas graves."
+        },
+        {
+          "nombre": "Cebolla",
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+        },
+        {
+          "nombre": "Ajo",
+          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los perros"
+        },
+        {
+          "nombre": "Uvas",
+          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina."
+        },
+        {
+          "nombre": "Pasas",
+          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina."
+        },
+        {
+          "nombre":"Aguacate",
+          "descripcion":"El aguacate podría ser tóxico para algunos perros a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate."
+        },
+        {
+          "nombre":"Huesos",
+          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos."
+        },
+        {
+          "nombre":"Huesos cocidos",
+          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos."
+        }
+      ]
+    },
+    "gato": {
+      "alimentosBuenos": [
+        {
+          "nombre": "Carne",
+          "descripcion": "Proporciona proteínas de alta calidad y es esencial para mantener la salud y la energía."
+        },
+        {
+          "nombre": "Pescado",
+          "descripcion": "Fuente de ácidos grasos omega-3, beneficiosos para la salud del corazón y el pelaje."
+        },
+        {
+          "nombre": "Yogurt natural",
+          "descripcion": "Proporciona probióticos beneficiosos para la salud digestiva."
+        },
+        {
+          "nombre": "Manzana",
+          "descripcion" : "Es fácil de digerir, suave, rica en vitaminas A, C, B, E y también contiene minerales. Ten mucho cuidado de no dar las semillas a tu gato porque son nocivas para él, retíralas antes."
+        },
+        {
+          "nombre": "Plátano",
+          "descripcion" : "Es una excelente fuente de potasio, un mineral que contribuye a la salud cardíaca y muscular. También son ricos en fibra, lo que puede ser beneficioso para el sistema digestivo de tu gato."
+        },
+        {
+          "nombre":"Fresas",
+          "descripcion":"Son ricas en antioxidantes y vitamina C. Además, contienen una enzima que puede ayudar a blanquear los dientes de tu gato. Asegúrate de darsela en trozos pequeños, retirando cualquier tallo."
+        },
+        {
+          "nombre":"Brócoli",
+          "descripcion":" El brócoli está lleno de vitaminas K y C, potasio, fibra y ácido fólico. Debe cocinarse bien y enfriarse antes de ofrecérselos a su gato. Cocer el brócoli al vapor conserva la mayor cantidad de nutrientes y hace que sea más seguro para el gato comerlo."
+        },
+        {
+          "nombre":"Calabaza",
+          "descripcion":"La calabaza es nutritiva y su gato puede comerla sin peligro. Además de ser una gran fuente de vitamina A, la calabaza contiene vitaminas C, B6, E y fibra."
+        }
+      ],
+      "alimentosMalos": [
+        {
+          "nombre": "Chocolate",
+          "descripcion": "Contiene teobromina, tóxica para los gatos, causando vómitos, diarrea y otros problemas graves."
+        },
+        {
+          "nombre": "Cebolla",
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+        },
+        {
+          "nombre": "Ajo",
+          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los gatos"
+        },
+        {
+          "nombre":"Aguacate",
+          "descripcion":"el aguacate podría ser tóxico para algunos gatos a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate."
+        },
+        {
+          "nombre": "Uvas",
+          "descripcion": "Pueden causar insuficiencia renal aguda en los gatos, manifestada por vómitos, letargo y disminución de la producción de orina."
+        }
+      ]
+    },
+    "conejo": {
+      "alimentosBuenos": [
+        {
+          "nombre": "Hierba",
+          "descripcion": "Esencial para la digestión adecuada y el desgaste dental."
+        },
+        {
+          "nombre": "Melón",
+          "descripcion": "El melón aporta una cantidad apreciable de distintas vitaminas y minerales, concretamente vitamina C, folatos, provitamina A y potasio. Además de la pulpa, los conejos también pueden consumir la piel."
+        },
+        {
+          "nombre": "Fresas",
+          "descripcion": "Proporcionan a tu conejo vitamina C y su contenido en antocianinas y en polifenoles convierten a las fresas en una de las frutas con mayor poder antioxidante."
+        },
+        {
+          "nombre": "Ciruela",
+          "descripcion": "Los conejos pueden comer ciruelas ya que aporta minerales como el potasio, y pequeñas cantidades de provitamina A y vitamina E. Destaca su contenido en compuestos antioxidantes, como los ácidos hidroxicinámicos y las antocianinas."
+        },
+        {
+          "nombre": "Espinacas",
+          "descripcion":"Le aportan a tu conejo una gran cantidad de folatos, vitamina C y vitamina A, y cantidades inferiores de vitamina E, B2 y B6. También aportan niveles elevados de betacarotenos, que se transforman en vitamina A en el organismo del conejo. En cuanto a los minerales, destaca su elevada proporción de magnesio y hierro."
+        },
+        {
+          "nombre": "Zanahoria",
+          "descripcion":"Destaca por sus elevados niveles de vitamina A y, en concreto, de carotenoides con actividad provitamina A. También aportan fibra y cantidades más discretas de vitamina C, B6, hierro, yodo y potasio."
+        },
+        {
+          "nombre": "Tomate",
+          "descripcion":"Entre las vitaminas del tomate destaca su contenido de vitamina A (básicamente en forma de carotenoides provitamina A) y vitamina C."
+        },
+        {
+          "nombre": "Pepino",
+          "descripcion":"Le aporta a tu conejo vitamina C y pequeñas cantidades de vitaminas del grupo B (B1, B3 y B9). Su alto contenido en potasio y bajo en sodio le confiere una acción diurética."
+        }
+      ],
+      "alimentosMalos": [
+        {
+          "nombre": "Cebolla",
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+        },
+        {
+          "nombre": "Papas",
+          "descripcion": "Pueden causar problemas digestivos y obesidad en los conejos."
+        },
+        {
+          "nombre":"Aceitunas",
+          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática."
+        },
+        {
+          "nombre":"Uvas",
+          "descripcion":"Su contenido en azúcares es parecido al de los plátanos, por ello tampoco deben ofrecerse de manera habitual a los conejos."
+        },
+        {
+          "nombre":"Pan",
+          "descripcion":" El sistema digestivo de los conejos está diseñado para procesar principalmente hierba y vegetales fibrosos. El pan, especialmente el pan blanco, es rico en carbohidratos y azúcares refinados, lo que puede dificultar la digestión de los conejos."
+        },
+        {
+          "nombre":"Lechuga",
+          "descripcion":"La lechuga es rica en vitamina A y hierro, tiene un alto contenido de fibra y favorece la hidratación de de tu conejo."
+        }
+      ]
+    },
+    "iguana": {
+      "alimentosBuenos": [
+        {
+          "nombre": "Plátano",
+          "descripcion": "Excelente fuente de potasio, vitamina B6 y fibra. Ayuda en la digestión y proporciona energía."
+        },
+        {
+          "nombre": "Platano",
+          "descripcion": "Excelente fuente de potasio, vitamina B6 y fibra. Ayuda en la digestión y proporciona energía."
+        },
+        {
+          "nombre": "Espinacas",
+          "descripcion": "Ricas en calcio, hierro y vitaminas A y K. Favorecen la salud ósea y ayudan en la coagulación de la sangre."
+        },
+        {
+          "nombre": "Espinaca",
+          "descripcion": "Ricas en calcio, hierro y vitaminas A y K. Favorecen la salud ósea y ayudan en la coagulación de la sangre."
+        },
+        {
+          "nombre": "Fresas",
+          "descripcion": "Son ricas en vitamina C, antioxidantes y fibra, lo que ayuda a mantener la salud del sistema inmunológico y la digestión."
+        },
+        {
+          "nombre": "Apio",
+          "descripcion": "Bajo en calorías y rico en fibra. Ayuda en la digestión y proporciona hidratación."
+        },
+        {
+          "nombre": "Calabaza",
+          "descripcion":"Buena fuente de fibra y vitamina A. Ayuda en la digestión y promueve la salud ocular."
+        },
+        {
+          "nombre": "Uvas",
+          "descripcion":"Contienen antioxidantes y vitamina C. Deben darse con moderación debido a su contenido de azúcar."
+        }
+      ],
+      "alimentosMalos": [
+        {
+          "nombre": "Cebolla",
+          "descripcion": "Contienen compuestos sulfurosos que pueden ser tóxicos para las iguanas. Estos compuestos pueden causar anemia y daño a los glóbulos rojos."
+        },
+        {
+          "nombre": "Papas",
+          "descripcion": "ontienen solanina, un compuesto tóxico para las iguanas. La solanina puede causar problemas digestivos graves e intoxicación."
+        },
+        {
+          "nombre":"Aceitunas",
+          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática."
+        },
+        {
+          "nombre":"Limón",
+          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio."
+        },
+        {
+          "nombre":"Naranja",
+          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio."
+        },
+        {
+          "nombre":"Carne",
+          "descripcion":"Las iguanas no están diseñadas para digerir carne. Su sistema digestivo no puede procesar adecuadamente las proteínas y grasas animales, lo que puede provocar problemas gastrointestinales como diarrea o estreñimiento."
+        }
+      ]
+    }
+  }
+} 
