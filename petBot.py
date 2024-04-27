@@ -10,6 +10,10 @@ with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
 with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
     respuestas = json.load(file)
 
+# Abre y carga el archivo JSON que contiene información en caso de ingesta de alimentos malos
+with open('DatosMascotas/reacciones.json', encoding= 'utf-8') as file:
+    reacciones = json.load(file) 
+
 token = '7040554508:AAFUhP7cgQPH0j1DiA3aec9zGRsHIjmHfjk'
 usrName = 'PetFoodieBot'
 
@@ -55,6 +59,24 @@ def handle_response(text: str, context: ContextTypes, update: Update):
         elif alimento_nombre in alimentosMalos:
             return f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
     elif tipo_mascota:
+        reaccionesMascota = {reaccion["nombre"].lower():
+                             reaccion for reaccion in reacciones["Mascotas"][tipo_mascota]} if tipo_mascota else{}
+        reaccion_nombre = None
+        reacciones = None
+        recomendaciones = None
+        tratamiento = None
+
+        for reaccion in list(reaccionesMascota.keys()):
+            if re.search(r'\\b' + reaccion + r'\\b', textoProcesado):
+                reaccion_nombre = reaccion
+                reacciones = reaccionesMascota[reaccion]["reacciones"]
+                recomendaciones = reaccionesMascota[reaccion]["recomendaciones"]
+                tratamiento = reaccionesMascota[reaccion]["tratamiento"]
+                break
+
+            # Respuesta para cuando la reacción al alimento es encontrada en el JSON
+            return f'Si tu {tipo_mascota} ha ingerido {reaccion_nombre}, puede presentar las siguientes reacciones: {reacciones}. Te recomendamos: {recomendaciones}. Tratamiento: {tratamiento}'
+
         response = random.choice(respuestas['AlimentoNoEncontrado'])
         log(text, response)
     else:
