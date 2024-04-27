@@ -16,3 +16,6 @@ Respuesta: No cuento con información sobre ese tipo de mascota, te recomiendo q
 Pregunta Usuario: Reaccion chocolate
 Respuesta: No encontré esa mascota en mi base de datos. ¿Podrías intentar con otra?
 
+Pregunta Usuario: Chocolate
+Respuesta: Lo siento, no tengo información sobre esa mascota. ¿Podrías especificar otra?
+
