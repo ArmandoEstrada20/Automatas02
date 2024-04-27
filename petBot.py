@@ -73,7 +73,6 @@ def handle_response(text: str, context: ContextTypes, update: Update):
                 recomendaciones = reaccionesMascota[reaccion]["recomendaciones"]
                 tratamiento = reaccionesMascota[reaccion]["tratamiento"]
                 break
-
             # Respuesta para cuando la reacción al alimento es encontrada en el JSON
             return f'Si tu {tipo_mascota} ha ingerido {reaccion_nombre}, puede presentar las siguientes reacciones: {reacciones}. Te recomendamos: {recomendaciones}. Tratamiento: {tratamiento}'
 
