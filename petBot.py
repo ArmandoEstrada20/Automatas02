@@ -74,8 +74,10 @@ def handle_response(text: str, context: ContextTypes, update: Update):
                 tratamiento = reaccionesMascota[reaccion]["tratamiento"]
                 break
             # Respuesta para cuando la reacción al alimento es encontrada en el JSON
-            return f'Si tu {tipo_mascota} ha ingerido {reaccion_nombre}, puede presentar las siguientes reacciones: {reacciones}. Te recomendamos: {recomendaciones}. Tratamiento: {tratamiento}'
+            if tipo_mascota and reaccion_nombre:
+                return f'Si tu {tipo_mascota} ha ingerido {reaccion_nombre}, puede presentar las siguientes reacciones: {reacciones}. Te recomendamos: {recomendaciones}. Tratamiento: {tratamiento}'
 
+    elif tipo_mascota:
         response = random.choice(respuestas['AlimentoNoEncontrado'])
         log(text, response)
     else:
