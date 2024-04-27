@@ -1,0 +1,22 @@
+{
+    "Mascotas":{
+        "perro":{
+            "nombre": "Chocolate",
+            "reacciones": "Cuando un perro consume chocolate, puede presentar una serie de síntomas. Estos pueden incluir:\n- Inquietud\n- Aumento del ritmo cardíaco\n- Jadeo\n- Vómitos\n- Diarrea\n- Temblores\n- Convulsiones\n- En casos graves, coma o muerte.\nEs crucial reconocer estos síntomas y buscar atención veterinaria de inmediato.",
+            "recomendaciones": "Si tu perro ha ingerido chocolate, es importante que actúes con rapidez. Llama a tu veterinario inmediatamente. No esperes a observar los síntomas, ya que pueden tardar en aparecer entre 6 y 12 horas. Los primeros minutos son claves para evitar complicaciones. En caso de que el chocolate haya sido ingerido recientemente, es importante forzar el vómito para eliminar la máxima cantidad posible.",
+            "tratamiento": "Utiliza 2 mililitros de agua oxigenada por kilo de peso del perro. Mezcla con agua a partes iguales, abre la boca de tu perro y dásela con una jeringa sin punta (para que entre a presión y la trague sin problemas). Puedes repetir el proceso a los 10-15 minutos. No lo hagas más de dos veces."
+        },
+        "gato":{
+            "nombre": "",
+            "reacciones":"",
+            "recomendaciones":"",
+            "tratamiento":""
+        },
+        "conejo":{
+            "nombre": "",
+            "reacciones":"",
+            "recomendaciones":"",
+            "tratamiento":""
+        }
+    }
+}
