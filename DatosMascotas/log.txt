@@ -10,3 +10,9 @@ Respuesta: Parece que ese alimento no está en mi lista. ¿Podrías proporcionar
 Pregunta Usuario: Grscias
 Respuesta: ¡Ups! No pude encontrar información sobre esa mascota. ¿Podrías intentar con otra?
 
+Pregunta Usuario: Reacciones
+Respuesta: No cuento con información sobre ese tipo de mascota, te recomiendo que acudas a un veterinario para más información.
+
+Pregunta Usuario: Reaccion chocolate
+Respuesta: No encontré esa mascota en mi base de datos. ¿Podrías intentar con otra?
+
