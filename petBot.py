@@ -10,14 +10,11 @@ with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
 with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
     respuestas = json.load(file)
 
-# Abre y carga el archivo JSON que contiene información en caso de ingesta de alimentos malos
-with open('DatosMascotas/reacciones.json', encoding= 'utf-8') as file:
-    reacciones = json.load(file) 
-
 token = '7040554508:AAFUhP7cgQPH0j1DiA3aec9zGRsHIjmHfjk'
 usrName = 'PetFoodieBot'
 
 ultimoMsj = None
+chat_id = None
 
 # Comandos de inicio
 async def start(update: Update, context: ContextTypes):
@@ -32,6 +29,8 @@ async def help(update: Update, context: ContextTypes):
 def handle_response(text: str, context: ContextTypes, update: Update):
     textoProcesado = text.lower()
     print(textoProcesado)
+
+    response = "Ocurrio un error interno. Estamos trabajando en ello."
 
     # Busca si alguna de las palabras coincide con un tipo de mascota en el JSON
     mascota_names = [k.lower() for k in data["Mascotas"].keys()]
@@ -49,46 +48,36 @@ def handle_response(text: str, context: ContextTypes, update: Update):
     for alimento in list(alimentosBuenos.keys()) + list(alimentosMalos.keys()):
         if re.search(r'\b' + alimento + r'\b', textoProcesado):
             alimento_nombre = alimento
-            descripcion = (alimentosBuenos[alimento] if alimento in alimentosBuenos else alimentosMalos[alimento])["descripcion"]
+            if alimento in alimentosBuenos:
+                descripcion = alimentosBuenos[alimento]["descripcion"]
+            elif alimento in alimentosMalos:
+                descripcion = alimentosMalos[alimento]["descripcion"]
+                reacciones = alimentosMalos[alimento]["reacciones"]
+                recomendaciones = alimentosMalos[alimento]["recomendaciones"]
+                tratamiento = alimentosMalos[alimento]["tratamiento"]
+            else:
+                descripcion = "Alimento no encontrado"
             break
 
     #Respuesta cuando el alimento es encontrado en el JSON
     if tipo_mascota and alimento_nombre:
         if alimento_nombre in alimentosBuenos:
-            return f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
+            response = f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
         elif alimento_nombre in alimentosMalos:
-            return f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
-    elif tipo_mascota:
-        reaccionesMascota = {reaccion["nombre"].lower():
-                             reaccion for reaccion in reacciones["Mascotas"][tipo_mascota]} if tipo_mascota else{}
-        reaccion_nombre = None
-        reacciones = None
-        recomendaciones = None
-        tratamiento = None
-
-        for reaccion in list(reaccionesMascota.keys()):
-            if re.search(r'\\b' + reaccion + r'\\b', textoProcesado):
-                reaccion_nombre = reaccion
-                reacciones = reaccionesMascota[reaccion]["reacciones"]
-                recomendaciones = reaccionesMascota[reaccion]["recomendaciones"]
-                tratamiento = reaccionesMascota[reaccion]["tratamiento"]
-                break
-            # Respuesta para cuando la reacción al alimento es encontrada en el JSON
-            if tipo_mascota and reaccion_nombre:
-                return f'Si tu {tipo_mascota} ha ingerido {reaccion_nombre}, puede presentar las siguientes reacciones: {reacciones}. Te recomendamos: {recomendaciones}. Tratamiento: {tratamiento}'
-
+            response = f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}\n\nAdemás, {reacciones}\n\n**Recomendaciones:**\n{recomendaciones}\n\n**Tratamiento:**\n{tratamiento}'
     elif tipo_mascota:
         response = random.choice(respuestas['AlimentoNoEncontrado'])
         log(text, response)
     else:
         response = random.choice(respuestas['MascotaNoEncontrada'])
         log(text, response)
-        
+
     return response
 
 #Función para evaluar si el bot esta siendo contactado personalmente o desde un grupo en el que fue añadido y mencionado
 async def handle_message(update: Update, context: ContextTypes):
-    global ultimoMsj
+    global ultimoMsj, chat_id
+    chat_id = update.message.chat_id
     message_type = update.message.chat.type
     text = update.message.text
 
@@ -110,15 +99,19 @@ async def handle_message(update: Update, context: ContextTypes):
         else:
             response = handle_response(text, context, update)
 
-    await update.message.reply_text(response)
+    await update.message.reply_text(response, parse_mode='Markdown')
+    await start_inactivity_check(update, context)
 
-async def check_inactivity():
+async def check_inactivity(update: Update, context: ContextTypes):
     global ultimoMsj
     while True:
-        await asyncio.sleep(60)
-        if time.time() - ultimoMsj > 120:
+        await asyncio.sleep(30)
+        if time.time() - ultimoMsj > 30:
             print('La sesión ha terminado, si desesas algo más no dudes en pedirlo.')
-            break
+            await context.bot.send_message(chat_id=update.message.chat_id, text='Hola! Parece que no has escrito nada en los últimos 30 segundos. ¿Necesitas ayuda con algo más?')
+
+async def start_inactivity_check(update: Update, context: ContextTypes):
+    asyncio.create_task(check_inactivity(update, context))
 
 async def error(update: Update, context: ContextTypes):
     print(context.error)
@@ -140,6 +133,3 @@ if __name__ == '__main__':
 
     print('El bot ha iniciado')
     app.run_polling(poll_interval=1, timeout=10)
-
-    # Ejecuta la funcion en segundo plano para comprobar la inactividad
-    asyncio.run(check_inactivity())
