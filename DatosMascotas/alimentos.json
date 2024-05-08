@@ -82,35 +82,60 @@
       "alimentosMalos": [
         {
           "nombre": "Chocolate",
-          "descripcion": "Contiene teobromina y cafeína, tóxicos para los perros, causando vómitos, diarrea y otros síntomas graves."
+          "descripcion": "Contiene teobromina y cafeína, tóxicos para los perros, causando vómitos, diarrea y otros síntomas graves.",
+          "reacciones": "cuando tu perro consume o consumió chocolate, puede presentar una serie de síntomas en los que se incluyen:\n- Inquietud\n- Aumento del ritmo cardíaco\n- Jadeo\n- Vómitos\n- Diarrea\n- Temblores\n- Convulsiones\n- En casos graves, coma o muerte.\nEs crucial reconocer estos síntomas y buscar atención veterinaria de inmediato.",
+          "recomendaciones": "Si tu perro ha ingerido chocolate, es importante que actúes con rapidez. Llama a tu veterinario inmediatamente. No esperes a observar los síntomas, ya que pueden tardar en aparecer entre 6 y 12 horas. Los primeros minutos son claves para evitar complicaciones. En caso de que el chocolate haya sido ingerido recientemente, es importante forzar el vómito para eliminar la máxima cantidad posible.",
+          "tratamiento": "Utiliza 2 mililitros de agua oxigenada por kilo de peso del perro. Mezcla con agua a partes iguales, abre la boca de tu perro y dásela con una jeringa sin punta (para que entre a presión y la trague sin problemas). Puedes repetir el proceso a los 10-15 minutos. No lo hagas más de dos veces."
+        
         },
         {
           "nombre": "Cebolla",
-          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
+          "reacciones":"si tu perro ha consumido cebolla los sintomas que pueden presentarse son los de proceso anémico:\n- Debilidad\n- Taquicardias\n- Aumento en su frecuencia cardiaca\n- Orina oscura, rojiza o café\n- Vómitos\n- Diarrea\nEs muy importante que sepas que una intoxicación por consumo de cebolla no manifiesta síntomas de manera inmediata, estos suelen aparecerer entre 1 y 5 días.",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Ajo",
-          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los perros"
+          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los perros",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Uvas",
-          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina."
+          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Pasas",
-          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina."
+          "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Aguacate",
-          "descripcion":"El aguacate podría ser tóxico para algunos perros a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate."
+          "descripcion":"El aguacate podría ser tóxico para algunos perros a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Huesos",
-          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos."
+          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Huesos cocidos",
-          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos."
+          "descripcion":"Los huesos cocidos pueden astillarse y causar obstrucciones o perforaciones en el tracto digestivo de los perros. Además, pueden astillarse en fragmentos afilados que pueden dañar el esófago, el estómago o los intestinos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         }
       ]
     },
@@ -152,23 +177,38 @@
       "alimentosMalos": [
         {
           "nombre": "Chocolate",
-          "descripcion": "Contiene teobromina, tóxica para los gatos, causando vómitos, diarrea y otros problemas graves."
+          "descripcion": "Contiene teobromina, tóxica para los gatos, causando vómitos, diarrea y otros problemas graves.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Cebolla",
-          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Ajo",
-          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los gatos"
+          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los gatos",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Aguacate",
-          "descripcion":"el aguacate podría ser tóxico para algunos gatos a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate."
+          "descripcion":"el aguacate podría ser tóxico para algunos gatos a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Uvas",
-          "descripcion": "Pueden causar insuficiencia renal aguda en los gatos, manifestada por vómitos, letargo y disminución de la producción de orina."
+          "descripcion": "Pueden causar insuficiencia renal aguda en los gatos, manifestada por vómitos, letargo y disminución de la producción de orina.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         }
       ]
     },
@@ -210,27 +250,45 @@
       "alimentosMalos": [
         {
           "nombre": "Cebolla",
-          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia."
+          "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
+          "reacciones":"si tu conejo ha consumido cebolla los sintomas que pueden presentarse son:\n- Somnolencias\n- Aumento en su frecuencia cardiaca\n- Fiebre\n- Vómitos\n-Diarrea\nEs muy importante quesi observas alguno de los síntomas anteriores en tu conejo acudas lo más pronto posible con el veterinario para que el sea el quien le de el tratamiento adecuado.",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Papas",
-          "descripcion": "Pueden causar problemas digestivos y obesidad en los conejos."
+          "descripcion": "Pueden causar problemas digestivos y obesidad en los conejos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Aceitunas",
-          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática."
+          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Uvas",
-          "descripcion":"Su contenido en azúcares es parecido al de los plátanos, por ello tampoco deben ofrecerse de manera habitual a los conejos."
+          "descripcion":"Su contenido en azúcares es parecido al de los plátanos, por ello tampoco deben ofrecerse de manera habitual a los conejos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Pan",
-          "descripcion":" El sistema digestivo de los conejos está diseñado para procesar principalmente hierba y vegetales fibrosos. El pan, especialmente el pan blanco, es rico en carbohidratos y azúcares refinados, lo que puede dificultar la digestión de los conejos."
+          "descripcion":" El sistema digestivo de los conejos está diseñado para procesar principalmente hierba y vegetales fibrosos. El pan, especialmente el pan blanco, es rico en carbohidratos y azúcares refinados, lo que puede dificultar la digestión de los conejos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Lechuga",
-          "descripcion":"La lechuga es rica en vitamina A y hierro, tiene un alto contenido de fibra y favorece la hidratación de de tu conejo."
+          "descripcion":"La lechuga es rica en vitamina A y hierro, tiene un alto contenido de fibra y favorece la hidratación de de tu conejo.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         }
       ]
     },
@@ -272,27 +330,38 @@
       "alimentosMalos": [
         {
           "nombre": "Cebolla",
-          "descripcion": "Contienen compuestos sulfurosos que pueden ser tóxicos para las iguanas. Estos compuestos pueden causar anemia y daño a los glóbulos rojos."
+          "descripcion": "Contienen compuestos sulfurosos que pueden ser tóxicos para las iguanas. Estos compuestos pueden causar anemia y daño a los glóbulos rojos.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre": "Papas",
-          "descripcion": "ontienen solanina, un compuesto tóxico para las iguanas. La solanina puede causar problemas digestivos graves e intoxicación."
+          "descripcion": "ontienen solanina, un compuesto tóxico para las iguanas. La solanina puede causar problemas digestivos graves e intoxicación.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Aceitunas",
-          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática."
+          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Limón",
-          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio."
-        },
-        {
-          "nombre":"Naranja",
-          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio."
+          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         },
         {
           "nombre":"Carne",
-          "descripcion":"Las iguanas no están diseñadas para digerir carne. Su sistema digestivo no puede procesar adecuadamente las proteínas y grasas animales, lo que puede provocar problemas gastrointestinales como diarrea o estreñimiento."
+          "descripcion":"Las iguanas no están diseñadas para digerir carne. Su sistema digestivo no puede procesar adecuadamente las proteínas y grasas animales, lo que puede provocar problemas gastrointestinales como diarrea o estreñimiento.",
+          "reacciones":"",
+          "recomendaciones":"",
+          "tratamiento":""
         }
       ]
     }
