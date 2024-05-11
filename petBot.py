@@ -10,7 +10,7 @@ with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
 with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
     respuestas = json.load(file)
 
-token = '7040554508:AAFUhP7cgQPH0j1DiA3aec9zGRsHIjmHfjk'
+token = 'TU_TOKEN'
 usrName = 'PetFoodieBot'
 
 ultimoMsj = None
