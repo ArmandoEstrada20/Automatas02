@@ -92,36 +92,29 @@
           "nombre": "Cebolla",
           "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
           "reacciones":"si tu perro ha consumido cebolla los sintomas que pueden presentarse son los de proceso anémico:\n- Debilidad\n- Taquicardias\n- Aumento en su frecuencia cardiaca\n- Orina oscura, rojiza o café\n- Vómitos\n- Diarrea\nEs muy importante que sepas que una intoxicación por consumo de cebolla no manifiesta síntomas de manera inmediata, estos suelen aparecerer entre 1 y 5 días.",
-          "recomendaciones":"",
-          "tratamiento":""
+          "recomendaciones":"Si tu perro ha ingerido cebolla y estas dentro de un rango no mayor a 4 horas, acude con el veterinario para que pueda administrarle una inyección que le provoque el vómito para eliminar la mayor cantidad de toxinas antes de que sean totalmente absorbidas. En la mayoría de los casos cuando se actua de forma inmediata la recuperación resulta satisfactoria.",
+          "tratamiento":"No existe un antídoto especifico para la intoxicación por ingerir cebolla, pero sus efectos pueden ser contrarrestados con medicamentos contra las náuseas, estimulantes de apetito, carbón activado el cual evita que el organismo de tu perro absorba las sustancias tóxicas."
         },
         {
           "nombre": "Ajo",
           "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los perros",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"si tu perro ha consumido ajo, presta atención a los sintomas que puede presentar:\n- Letargo\n- Perdida del apetito\n- Problemas respiratorios (aumento o disminución de la respiración)\n- Encías pálidas\n- Tono amarillento en la piel y en las mucosas\nPueden pasar de 1 a 4 días desde que tu perro comió ajo hasta que se enferme. La gravedad de los sintomas dependerá de la dosis que fue ingerida.",
+          "recomendaciones":"Si tu perro ha ingerido ajo lo mejor que puedes hacer es dirigirte inmediantamente con tu veterinario para que este le provoque el vómito ya que hacerlo en casa sin supervisión puede traer consigo otro tipo de afectaciones. Es importante provocar el vómito en un periodo no mayor a 3 horas después de la ingesta.",
+          "tratamiento":"Para la intoxicación por ingesta de ajo no hay un tratamiento especifico, si no que, el tratamiento es sintomatico, llevando a cabo técnicas de fluidoterapia intravenosa, el sumistro de oxigeno y en casos graves, puede ser necesaria una transfusión de sangre."
         },
         {
           "nombre": "Uvas",
           "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"los sintomas que tu perro puede presentar si ha ingerido uvas pueden ser los siguientes:\n- Temblores\n- Dolores abdominales\n- Convulsiones\n- Vómitos y diarrea\n- Baja producción de orina\n- Incapacidad de los riñones para filtrar resiudos de sangre\nEstos síntomas pueden comenzar a manifestarse aproximadamente pasadas 6 horas de haber sido ingeridas.",
+          "recomendaciones":"No hay una cantidad específica de uvas que sea segura, ya que dependerá de tu tipo de perro. Pero incluso una cantidad muy pequeña de uvas puede causar un grave daño en tu perro. En casos de intoxicación severa, es muy probable que sea necesaria la hospitalización para brindar todo el apoyo y la terapia necesaria para la desintoxicación.",
+          "tratamiento":"Si tu perro comió uvas acude con el veterinario lo antes posible, si la ingesta se ha producido en la última hora se le inducirá el vómito a tu perro. En caso de que no se hayan logrado expulsar las uvas, es posible que te recomienden hozpitalizarlo para administrar líquidos vía intravenosa y tenerlo en observación entre 48 y 72 horas."
         },
         {
           "nombre": "Pasas",
           "descripcion": "Pueden causar insuficiencia renal aguda en los perros, manifestada por vómitos, letargo y disminución de la producción de orina.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Aguacate",
-          "descripcion":"El aguacate podría ser tóxico para algunos perros a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"los sintomas que tu perro puede presentar si ha ingerido pasas pueden ser los siguientes:\n- Temblores\n- Dolores abdominales\n- Convulsiones\n- Vómitos y diarrea\n- Baja producción de orina\n- Incapacidad de los riñones para filtrar resiudos de sangre\nEstos síntomas pueden comenzar a manifestarse aproximadamente pasadas 6 horas de haber sido ingeridas.",
+          "recomendaciones":"No hay una cantidad específica de pasas que sea segura, ya que dependerá de tu tipo de perro. Pero incluso una cantidad muy pequeña de pasas puede causar un grave daño en tu perro. En casos de intoxicación severa, es muy probable que sea necesaria la hospitalización para brindar todo el apoyo y la terapia necesaria para la desintoxicación.",
+          "tratamiento":"Si tu perro comió pasas acude con el veterinario lo antes posible, si la ingesta se ha producido en la última hora se le inducirá el vómito a tu perro. En caso de que no se hayan logrado expulsar las pasas, es posible que te recomienden hozpitalizarlo para administrar líquidos vía intravenosa y tenerlo en observación entre 48 y 72 horas."
         },
         {
           "nombre":"Huesos",
