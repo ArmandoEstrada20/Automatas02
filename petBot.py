@@ -15,7 +15,8 @@ usrName = 'PetFoodieBot'
 
 ultimoMsj = None
 chat_id = None
-
+inactividad = None
+mensajeEnviado = False
 # Comandos de inicio
 async def start(update: Update, context: ContextTypes):
     await update.message.reply_text('Hola, soy PetFoodieBot, te respondo preguntas respecto a la alimentación de tus mascotas. ¿En qué puedo ayudarte?')
@@ -59,6 +60,12 @@ def handle_response(text: str, context: ContextTypes, update: Update):
                 descripcion = "Alimento no encontrado"
             break
 
+    # Si el usuario pregunta de manera general que es lo que puede comer su mascota
+    if tipo_mascota and "comer" in textoProcesado:
+        alimentosBuenos = [alimento["nombre"] for alimento in data["Mascotas"][tipo_mascota]["alimentosBuenos"]]
+        response = f'Tu {tipo_mascota} puede comer los siguientes alimentos: ' + ', '.join(alimentosBuenos)
+        return response
+
     #Respuesta cuando el alimento es encontrado en el JSON
     if tipo_mascota and alimento_nombre:
         if alimento_nombre in alimentosBuenos:
@@ -76,13 +83,24 @@ def handle_response(text: str, context: ContextTypes, update: Update):
 
 #Función para evaluar si el bot esta siendo contactado personalmente o desde un grupo en el que fue añadido y mencionado
 async def handle_message(update: Update, context: ContextTypes):
-    global ultimoMsj, chat_id
+    global ultimoMsj, chat_id, inactividad, mensajeEnviado
     chat_id = update.message.chat_id
     message_type = update.message.chat.type
     text = update.message.text
 
+    # Comprueba si el usuario continuará en el chat
+    if text.lower() in ['no', 'no, gracias', 'no gracias', 'no deseo continuar', 'no muchas gracias', 'no, muchas gracias']:
+        await update.message.reply_text('¡Gracias por usar PetFoodieBot! Si tienes más preguntas en el futuro, no dudes en preguntar. ¡Hasta luego!')
+        if inactividad is not None:
+            inactividad.cancel()
+        return
+
+
     # Actualiza la hora del último mensaje
     ultimoMsj = time.time()
+
+    # Bandera de mensaje de inactividad
+    mensajeEnviado = False
 
     # Comprueba si el mensaje es un agradecimiento
     agradecimientos = ['gracias', 'muchas gracias', 'gracias por tu ayuda', 'te lo agradezco']
@@ -99,16 +117,20 @@ async def handle_message(update: Update, context: ContextTypes):
         else:
             response = handle_response(text, context, update)
 
+    inactividad  = asyncio.create_task(check_inactivity(update, context))
+    
     await update.message.reply_text(response, parse_mode='Markdown')
     await start_inactivity_check(update, context)
 
 async def check_inactivity(update: Update, context: ContextTypes):
-    global ultimoMsj
+    global ultimoMsj, chat_id, mensajeEnviado
     while True:
         await asyncio.sleep(30)
-        if time.time() - ultimoMsj > 30:
+        if time.time() - ultimoMsj > 30 and chat_id is not None and not mensajeEnviado:
             print('La sesión ha terminado, si desesas algo más no dudes en pedirlo.')
             await context.bot.send_message(chat_id=update.message.chat_id, text='Hola! Parece que no has escrito nada en los últimos 30 segundos. ¿Necesitas ayuda con algo más?')
+            mensajeEnviado = True
+            break
 
 async def start_inactivity_check(update: Update, context: ContextTypes):
     asyncio.create_task(check_inactivity(update, context))
@@ -118,8 +140,10 @@ async def error(update: Update, context: ContextTypes):
     await update.message.reply_text('Ocurrió un error...')
     
 def log(question: str, response: str):
-    with open('DatosMascotas/log.txt', 'a') as f:
+    with open('DatosMascotas/log.txt', 'a', encoding='utf-8') as f:
         f.write(f'Pregunta Usuario: {question}\nRespuesta: {response}\n\n')
+
+    print('Nuevo registro en el archivo log...')
 
 if __name__ == '__main__':
     print('Bot iniciando...')
