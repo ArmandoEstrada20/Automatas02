@@ -171,37 +171,37 @@
         {
           "nombre": "Chocolate",
           "descripcion": "Contiene teobromina, tóxica para los gatos, causando vómitos, diarrea y otros problemas graves.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"los sintomas que puede presentar tu gato al ingerir chocolate pueden ser:\n- Vómitos\n- Aumento en la frecuencia cardiaca\n- Sed excesiva\n- Hiperactividad\n- Temblores o espamos musculares\n- Náuseas\n- Convulsiones\nLos sintomas ante la ingesta de chocolate pueden llegar a presentarse entre als 2 y 24 horas y puede alargarse por varios días.",
+          "recomendaciones":"Si no ha transcurrido un tiempo mayor a 3 horas, estas a tiempo de acudir con el veterinario el puede inducirle el vómito para evitar que se absorba la teobromina con la ayuda de carbón activado.",
+          "tratamiento":"No existe ningún antídoto para la teobromina, sino que el tratamiento aplicado es sintomático y de apoyo. Si surgen convulsiones, se pueden suministrar relajantes musculares y anticonvulsivos y, en caso de afectación cardíaca, es posible que deba aplicarse medicación específica para el corazón con el fin de neutralizar las arritmias y palpitaciones. De presentar problemas de vómito se requieren fármacos a fin de proteger el estómago y el intestino."
         },
         {
           "nombre": "Cebolla",
           "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"los sintomas que puede presentar tu gato pueden tardar varios días después de la ingesta en hacerse notar, presta atención si notas los siguientes sintomas:\n- Debilidad\n- Pérdida de apetito\n- Vómito\n- Babeo excesivo\n- Mucosas pálidas\n- Diarrea",
+          "recomendaciones":"Es importante acudir con el veterinario lo antes posible, el tendrá lo necesario para tratar la ingesta de cebolla con medicamento para inducir el vómito, dependiendo del grado de la intoxicación también le pondrán administrar líquidos de manera intravenosa.",
+          "tratamiento":"No existe un antídoto específico para tratar la intoxiación, el tratamiento que pueda recibir sera sintomático y de acuerdo al nivel de intoxicación en el que se encuentre tu gato. "
         },
         {
           "nombre": "Ajo",
-          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los gatos",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "descripcion": "El ajo contiene tiosulfato, substancia que en grandes dosis y de forma continuada en el tiempo resulta tóxica para el organismo de los gatos, contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
+          "reacciones":"los sintomas que puede presentar tu gato pueden tardar varios días después de la ingesta en hacerse notar, presta atención si notas los siguientes sintomas:\n- Debilidad\n- Pérdida de apetito\n- Vómito\n- Babeo excesivo\n- Mucosas pálidas\n- Diarrea",
+          "recomendaciones":"Es importante acudir con el veterinario lo antes posible, el tendrá lo necesario para tratar la ingesta de ajo con medicamento para inducir el vómito, dependiendo del grado de la intoxicación también le pondrán administrar líquidos de manera intravenosa.",
+          "tratamiento":"No existe un antídoto específico para tratar la intoxiación, el tratamiento que pueda recibir sera sintomático y de acuerdo al nivel de intoxicación en el que se encuentre tu gato. "
         },
         {
           "nombre":"Aguacate",
           "descripcion":"el aguacate podría ser tóxico para algunos gatos a causa de la persina que contiene. La persina es una sustancia fungicida presente en las hojas, fruto y semillas del aguacate.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"es importante que prestes atención dentro de las primeras 24 horas después de la ingesta, ya que tu gato puede presentar los siguientes síntomas:\n- Vómitos\n- Dolores abdominales\n- Diarrea\n- Dificultades respiratorias",
+          "recomendaciones":"En caso que sospeches o confirmes que tu gato ha comido aguacat, lo mejor es acudir al veterinario lo antes posible, muchos de los cuadros de intoxicación resultan de gravedad leve o moderada y son tratables acorde a los síntomas que presente tu gato. En caso de una intoxicación severa será necesario limpiar el sistema digestivo mediante inducción al vómito, lavado gástrico incluso carbón activado el cual absorbe las toxinas en el sistema.",
+          "tratamiento":"En la mayoría de los casos de intoxicación el tratamiento suele ser síntomatico, lo mejor siempre será evitar que tu gato ingiera aguacate. Actualmente no existen datos sobre la dosis de aguacate que resulta tóxica para los gatos."
         },
         {
           "nombre": "Uvas",
           "descripcion": "Pueden causar insuficiencia renal aguda en los gatos, manifestada por vómitos, letargo y disminución de la producción de orina.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"tras una ingesta de uvas generalmente los sintomas se presentan en cuestión de horas, los síntomas que se pueden presentar son:\n- Vómitos\n- Falta de apetito\n- Diarrea\n- Temblores\n- Deshidratación\n- Frecuencia cardíaca alta",
+          "recomendaciones":"Si no estás seguro de la cantidad exacta de uvas que ingirió tu gato, lo mejor es llevarlo al veterinario de emergencia para que un profesional capacitado lo revise y en caso de no tener riesgos, le dé el visto bueno.",
+          "tratamiento":"En la mayoría de los casos, el veterinario inducirá el vómito para sacar la mayor cantidad posible de uvas del sistema de tu gato. Nunca intentes inducir el vómito tú mismo, ya que podrías causarle más daño que bien a tu gato. Si tu gato ha ingerido demasiadas uvas o ha pasado mucho tiempo, se requerirán medidas más extensas. Estas medidas pueden incluir líquidos intravenosos y, en casos extremos, transfusiones de sangre."
         }
       ]
     },
@@ -238,123 +238,33 @@
         {
           "nombre": "Pepino",
           "descripcion":"Le aporta a tu conejo vitamina C y pequeñas cantidades de vitaminas del grupo B (B1, B3 y B9). Su alto contenido en potasio y bajo en sodio le confiere una acción diurética."
+        },
+        {
+          "nombre":"Lechuga",
+          "descripcion":"La lechuga es rica en vitamina A y hierro, tiene un alto contenido de fibra y favorece la hidratación de de tu conejo."
         }
       ],
       "alimentosMalos": [
         {
           "nombre": "Cebolla",
           "descripcion": "Contienen compuestos tóxicos que pueden dañar los glóbulos rojos, provocando anemia.",
-          "reacciones":"si tu conejo ha consumido cebolla los sintomas que pueden presentarse son:\n- Somnolencias\n- Aumento en su frecuencia cardiaca\n- Fiebre\n- Vómitos\n-Diarrea\nEs muy importante quesi observas alguno de los síntomas anteriores en tu conejo acudas lo más pronto posible con el veterinario para que el sea el quien le de el tratamiento adecuado.",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"si tu conejo ha consumido cebolla los sintomas que pueden presentarse son:\n- Somnolencias\n- Aumento en su frecuencia cardiaca\n- Fiebre\n- Vómitos\n- Diarrea\nEs muy importante quesi observas alguno de los síntomas anteriores en tu conejo acudas lo más pronto posible con el veterinario para que el sea el quien le de el tratamiento adecuado.",
+          "recomendaciones":"Lleva a tu conejo al veterinario inmediatamente. La atención médica temprana puede ser crucial para el tratamiento exitoso. El veterinario puede realizar exámenes de sangre para evaluar la extensión de la anemia y proporcionar tratamientos de soporte, como fluidos intravenosos, suplementos de hierro y en casos severos, transfusiones de sangre.",
+          "tratamiento":"Es crucial que reciba atención veterinaria inmediata. El tratamiento específico dependerá de la cantidad de cebolla consumida y la rapidez con la que se actúe. Si se diagnostica anemia, los suplementos de hierro pueden ser necesarios para ayudar a aumentar la producción de glóbulos rojos. Pueden administrarse antioxidantes como la vitamina E y C para ayudar a proteger los glóbulos rojos del daño oxidativo."
         },
         {
           "nombre": "Papas",
           "descripcion": "Pueden causar problemas digestivos y obesidad en los conejos.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "reacciones":"las papas contienen altos niveles de almidón, lo que puede ser difícil de digerir para los conejos y puede alterar su flora intestinal. Los síntomas por intoxicación que puede presentar tu conejo son:\n- Diarrea\n- Dolor abdominal\n- Convulsiones\n- Temblores\n- Dificultades para respirar\n- Vómitos\nLos síntomas pueden presentarse en un periodo de entre 2 y 24 horas después de la ingesta.",
+          "recomendaciones":"Acude con el veterinario lo antes posible, el le administrará a tu conejo una dosis de carbon activado para inducir el vómito, preferiblemente dentro de las primeras horas de la ingesta. La rápida intervención veterinaria puede marcar una gran diferencia en la recuperación de tu conejo.",
+          "tratamiento":"No existe un medicamento específico para tratar la intoxicación por ingesta de papa en conejos. En lugar de eso, el tratamiento se centra en el manejo de los síntomas y el apoyo general al sistema de tu conejo para superar la intoxicación"
         },
         {
           "nombre":"Aceitunas",
-          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Uvas",
-          "descripcion":"Su contenido en azúcares es parecido al de los plátanos, por ello tampoco deben ofrecerse de manera habitual a los conejos.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Pan",
-          "descripcion":" El sistema digestivo de los conejos está diseñado para procesar principalmente hierba y vegetales fibrosos. El pan, especialmente el pan blanco, es rico en carbohidratos y azúcares refinados, lo que puede dificultar la digestión de los conejos.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Lechuga",
-          "descripcion":"La lechuga es rica en vitamina A y hierro, tiene un alto contenido de fibra y favorece la hidratación de de tu conejo.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        }
-      ]
-    },
-    "iguana": {
-      "alimentosBuenos": [
-        {
-          "nombre": "Plátano",
-          "descripcion": "Excelente fuente de potasio, vitamina B6 y fibra. Ayuda en la digestión y proporciona energía."
-        },
-        {
-          "nombre": "Platano",
-          "descripcion": "Excelente fuente de potasio, vitamina B6 y fibra. Ayuda en la digestión y proporciona energía."
-        },
-        {
-          "nombre": "Espinacas",
-          "descripcion": "Ricas en calcio, hierro y vitaminas A y K. Favorecen la salud ósea y ayudan en la coagulación de la sangre."
-        },
-        {
-          "nombre": "Espinaca",
-          "descripcion": "Ricas en calcio, hierro y vitaminas A y K. Favorecen la salud ósea y ayudan en la coagulación de la sangre."
-        },
-        {
-          "nombre": "Fresas",
-          "descripcion": "Son ricas en vitamina C, antioxidantes y fibra, lo que ayuda a mantener la salud del sistema inmunológico y la digestión."
-        },
-        {
-          "nombre": "Apio",
-          "descripcion": "Bajo en calorías y rico en fibra. Ayuda en la digestión y proporciona hidratación."
-        },
-        {
-          "nombre": "Calabaza",
-          "descripcion":"Buena fuente de fibra y vitamina A. Ayuda en la digestión y promueve la salud ocular."
-        },
-        {
-          "nombre": "Uvas",
-          "descripcion":"Contienen antioxidantes y vitamina C. Deben darse con moderación debido a su contenido de azúcar."
-        }
-      ],
-      "alimentosMalos": [
-        {
-          "nombre": "Cebolla",
-          "descripcion": "Contienen compuestos sulfurosos que pueden ser tóxicos para las iguanas. Estos compuestos pueden causar anemia y daño a los glóbulos rojos.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre": "Papas",
-          "descripcion": "ontienen solanina, un compuesto tóxico para las iguanas. La solanina puede causar problemas digestivos graves e intoxicación.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Aceitunas",
-          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, puesto que pueden favorecer la aparición de obesidad, lipidosis hepática.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Limón",
-          "descripcion":"Puede causar irritación estomacal y problemas digestivos en las iguanas. Además, los cítricos también pueden interferir con la absorción de calcio.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
-        },
-        {
-          "nombre":"Carne",
-          "descripcion":"Las iguanas no están diseñadas para digerir carne. Su sistema digestivo no puede procesar adecuadamente las proteínas y grasas animales, lo que puede provocar problemas gastrointestinales como diarrea o estreñimiento.",
-          "reacciones":"",
-          "recomendaciones":"",
-          "tratamiento":""
+          "descripcion":"su elevado contenido de grasa las convierte en un alimento prohibido para los conejos, tienen un sistema digestivo adaptado para procesar dietas altas en fibra y bajas en grasas. El consumo de alimentos ricos en grasas puede llevar a problemas digestivos y obesidad.",
+          "reacciones":"si tu conejo ha consumido aceitunas es probable que notes algunos de los siguientes síntomas:\n- Diarrea\n- Dolores abdominales\n- Deshidratación\n- Hinchazón\n- Gases excesivos\nLos síntomas de intoxicación por aceitunas en conejos pueden aparecer desde unas pocas horas hasta 24 horas después de la ingesta.",
+          "recomendaciones":" Si el consumo de aceitunas fue reciente y el veterinario lo aprueba, puedes intentar inducir el vómito en tu conejo. Sin embargo, esto debe hacerse bajo la supervisión de un profesional. No intentes esto sin consultar primero con el veterinario.",
+          "tratamiento":"El tratamiento a seguir para un caso de ingesta de aceitunas será sintomatico, el veterinario recomendará fluidoterapia lo que ayudará a combatir la deshidratación. También el veterinario podra administrarle antidiarreicos, antiácidos para proteger el estómago y aliviar un poco el dolor abdominal"
         }
       ]
     }
