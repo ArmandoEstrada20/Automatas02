@@ -10,21 +10,24 @@ with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
 with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
     respuestas = json.load(file)
 
-token = 'TU_TOKEN'
+token = 'TOKEN'
 usrName = 'PetFoodieBot'
 
 ultimoMsj = None
 chat_id = None
 inactividad = None
 mensajeEnviado = False
+
 # Comandos de inicio
 async def start(update: Update, context: ContextTypes):
     await update.message.reply_text('Hola, soy PetFoodieBot, te respondo preguntas respecto a la alimentación de tus mascotas. ¿En qué puedo ayudarte?')
 
 async def help(update: Update, context: ContextTypes):
     await update.message.reply_text('Para obtener información precisa asegúrate de que tu mensaje cuente con el tipo de mascota que tienes y el alimento que quieras darle.\n\t'
-                                    + '\n\t **Ej. ¿Puedo darle carne a mi perro?** \n' +
-                                    '\nNo te preocupes si no pones los signos, entenderé tu pregunta de igual manera.')
+                                    '\n\t <b> Ej. ¿Puedo darle carne a mi perro? </b> \n'
+                                    '\nSi deseas saber información sobre alimentos en general asegúrate de que tu mensaje incluya la palabra "comer" y el tipo de tu mascota.\n\t'
+                                    '\n\t <b> Ej. ¿Qué puede comer mi conejo? </b>\n'
+                                    '\nNo te preocupes si no pones los signos, entenderé tu pregunta de igual manera.\n', parse_mode='HTML')
 
 #Función para manejar las respuestas del bot
 def handle_response(text: str, context: ContextTypes, update: Update):
@@ -71,7 +74,7 @@ def handle_response(text: str, context: ContextTypes, update: Update):
         if alimento_nombre in alimentosBuenos:
             response = f'Sí, puedes darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}'
         elif alimento_nombre in alimentosMalos:
-            response = f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}\n\nAdemás, {reacciones}\n\n**Recomendaciones:**\n{recomendaciones}\n\n**Tratamiento:**\n{tratamiento}'
+            response = f'No, no deberías darle {alimento_nombre} a tu {tipo_mascota}. {descripcion}\n\nAdemás, {reacciones}\n\n<b>Recomendaciones:</b>\n{recomendaciones}\n\n<b>Tratamiento:</b>\n{tratamiento}'
     elif tipo_mascota:
         response = random.choice(respuestas['AlimentoNoEncontrado'])
         log(text, response)
@@ -95,7 +98,6 @@ async def handle_message(update: Update, context: ContextTypes):
             inactividad.cancel()
         return
 
-
     # Actualiza la hora del último mensaje
     ultimoMsj = time.time()
 
@@ -117,9 +119,16 @@ async def handle_message(update: Update, context: ContextTypes):
         else:
             response = handle_response(text, context, update)
 
+    # Comprueba si el mensaje del usuario contiene malas palabras
+    palabrasProhibidas = respuestas['palabrasProhibidas']
+    if any(palabra in text.lower() for palabra in palabrasProhibidas):
+        response = random.choice(respuestas['Groserias'])
+        await update.message.reply_text(response)
+        return
+
     inactividad  = asyncio.create_task(check_inactivity(update, context))
     
-    await update.message.reply_text(response, parse_mode='Markdown')
+    await update.message.reply_text(response, parse_mode='HTML')
     await start_inactivity_check(update, context)
 
 async def check_inactivity(update: Update, context: ContextTypes):
