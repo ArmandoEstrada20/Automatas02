@@ -10,17 +10,19 @@ with open('DatosMascotas/alimentos.json', encoding='utf-8') as file:
 with open('DatosMascotas/respuestas.json', encoding= 'utf-8') as file:
     respuestas = json.load(file)
 
-token = 'TOKEN'
+token = '7040554508:AAFUhP7cgQPH0j1DiA3aec9zGRsHIjmHfjk'
 usrName = 'PetFoodieBot'
 
 ultimoMsj = None
 chat_id = None
 inactividad = None
 mensajeEnviado = False
+lock = asyncio.Lock()
 
 # Comandos de inicio
 async def start(update: Update, context: ContextTypes):
-    await update.message.reply_text('Hola, soy PetFoodieBot, te respondo preguntas respecto a la alimentación de tus mascotas. ¿En qué puedo ayudarte?')
+    await update.message.reply_text('Hola, soy PetFoodieBot, te respondo preguntas respecto a la alimentación de tus mascotas. ¿En qué puedo ayudarte?\n'
+                                    '\n<i>Si necesitas ayuda para saber como estructurar tu pregunta escribe el comando <b>/help</b></i>', parse_mode='HTML')
 
 async def help(update: Update, context: ContextTypes):
     await update.message.reply_text('Para obtener información precisa asegúrate de que tu mensaje cuente con el tipo de mascota que tienes y el alimento que quieras darle.\n\t'
@@ -132,14 +134,15 @@ async def handle_message(update: Update, context: ContextTypes):
     await start_inactivity_check(update, context)
 
 async def check_inactivity(update: Update, context: ContextTypes):
-    global ultimoMsj, chat_id, mensajeEnviado
-    while True:
-        await asyncio.sleep(30)
-        if time.time() - ultimoMsj > 30 and chat_id is not None and not mensajeEnviado:
-            print('La sesión ha terminado, si desesas algo más no dudes en pedirlo.')
-            await context.bot.send_message(chat_id=update.message.chat_id, text='Hola! Parece que no has escrito nada en los últimos 30 segundos. ¿Necesitas ayuda con algo más?')
-            mensajeEnviado = True
-            break
+    global ultimoMsj, chat_id, mensajeEnviado, lock
+    async with lock:
+        while True:
+            await asyncio.sleep(30)
+            if time.time() - ultimoMsj > 30 and chat_id is not None and not mensajeEnviado:
+                print('La sesión ha terminado, si deseas algo más no dudes en pedirlo.')
+                await context.bot.send_message(chat_id=chat_id, text='Hola! Parece que no has escrito nada en los últimos 30 segundos. ¿Necesitas ayuda con algo más?')
+                mensajeEnviado = True
+                break
 
 async def start_inactivity_check(update: Update, context: ContextTypes):
     asyncio.create_task(check_inactivity(update, context))
